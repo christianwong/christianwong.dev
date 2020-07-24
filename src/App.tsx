@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+
 import logo from './chris.png';
 import './App.css';
 
@@ -19,25 +21,25 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            LinkedIn
+            <FaLinkedin />
           </a>
-          &nbsp;|&nbsp;
+          &nbsp; &nbsp;
           <a
             className="App-link"
             href="https://github.com/christianwong"
             target="_blank"
             rel="noopener noreferrer"
           >
-            GitHub
+            <FaGithub />
           </a>
-          &nbsp;|&nbsp;
+          &nbsp; &nbsp;
           <a
             className="App-link"
             href="https://www.instagram.com/nossofuquinho/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            My Bug
+            <FaInstagram />
           </a>
         </p>
       </header>
