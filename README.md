@@ -1,4 +1,4 @@
-![Firebase Deploy](https://github.com/christianwong/ts-react-firebase-template/workflows/Firebase%20Deploy/badge.svg)
+![Firebase Deploy](https://github.com/christianwong/christianwong-dev/workflows/Firebase%20Deploy/badge.svg)
 
 # ts-react-firebase-template
 Template for base Typescript based React APP deployed in Firebase using GitHub Actions.
