@@ -30,6 +30,15 @@ function App() {
           >
             GitHub
           </a>
+          &nbsp;|&nbsp;
+          <a
+            className="App-link"
+            href="https://www.instagram.com/nossofuquinho/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            My Bug
+          </a>
         </p>
       </header>
     </div>
