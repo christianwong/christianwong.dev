@@ -3,10 +3,14 @@ import React from 'react';
 const ProfileDescription: React.FC = () => {
   return (
     <>
-      <p>I am a developer and work as Scrum Master at Amdocs.</p>
       <p>
-        I got my master degree in Computer Science at University of São Paulo.
+        Software Developer&nbsp;
+        <span aria-label="love" role="img">
+          ❤️
+        </span>
+        &nbsp;and works as Scrum Master at Amdocs.
       </p>
+      <p>Got master degree in Computer Science at University of São Paulo.</p>
     </>
   );
 };
