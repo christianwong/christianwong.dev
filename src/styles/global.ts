@@ -19,6 +19,12 @@ export default createGlobalStyle`
     font-size: calc(10px + 2vmin);
     color: white;
     -webkit-font-smoothing: antialiased;
+
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -moz-osx-font-smoothing: grayscale;
   }
 
  #root {
