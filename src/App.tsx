@@ -1,6 +1,9 @@
 import React from 'react';
 
-import GlobalStyle from './styles/global';
+import GlobalStyle, {
+  PlaceHolderLight,
+  PlaceHolderDark,
+} from './styles/global';
 
 import ProfileHeader from './components/ProfileHeader';
 import ProfileDescription from './components/ProfileDescription';
@@ -9,9 +12,15 @@ import Contact from './components/Contact';
 const App: React.FC = () => {
   return (
     <>
-      <ProfileHeader />
-      <ProfileDescription />
-      <Contact />
+      <PlaceHolderDark>
+        <ProfileHeader />
+        <ProfileDescription />
+      </PlaceHolderDark>
+
+      <PlaceHolderLight>
+        <Contact />
+      </PlaceHolderLight>
+
       <GlobalStyle />
     </>
   );

@@ -7,5 +7,6 @@ export const ProfilePic = styled.img`
 `;
 
 export const Name = styled.h1`
-  color: #f2eaec;
+  padding-top: 30px;
+  padding-bottom: 30px;
 `;

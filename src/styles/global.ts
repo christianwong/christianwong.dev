@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   * {
@@ -12,12 +12,11 @@ export default createGlobalStyle`
     text-align: center;
     background-color: #45969b;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     font-size: calc(10px + 2vmin);
-    color: white;
     -webkit-font-smoothing: antialiased;
 
     margin: 0;
@@ -28,8 +27,28 @@ export default createGlobalStyle`
   }
 
  #root {
-    max-width: 900px;
+    /* max-width: 900px; */
     margin: 0 auto;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
+  }
+`;
+
+export const PlaceHolderLight = styled.div`
+  background-color: #f2eaec;
+  padding: 120px 40px;
+  color: #45969b;
+
+  a {
+    color: #50b6bb;
+  }
+`;
+
+export const PlaceHolderDark = styled.div`
+  background-color: #45969b;
+  padding: 120px 40px;
+  color: #f2eaec;
+
+  a {
+    color: #0ce5e1;
   }
 `;
