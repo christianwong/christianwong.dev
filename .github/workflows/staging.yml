@@ -1,4 +1,4 @@
-name: Firebase Deploy
+name: Staging Deploy
 on:
   push:
     branches:
@@ -39,6 +39,6 @@ jobs:
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@staging
         with:
-          args: deploy --only hosting --project ${{ secrets.PROJECT_ID }}
+          args: deploy --only hosting --project ${{ secrets.PROJECT_STAGING_ID }}
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
