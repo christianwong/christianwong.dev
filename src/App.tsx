@@ -8,6 +8,7 @@ import GlobalStyle, {
 import ProfileHeader from './components/ProfileHeader';
 import ProfileDescription from './components/ProfileDescription';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,8 @@ const App: React.FC = () => {
       <PlaceHolderLight>
         <Contact />
       </PlaceHolderLight>
+
+      <Footer />
 
       <GlobalStyle />
     </>
