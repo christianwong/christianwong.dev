@@ -1,4 +1,4 @@
-name: Validate pull request
+name: Test new changes
 on:
   push:
     branches:
