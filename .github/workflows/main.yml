@@ -1,4 +1,4 @@
-name: Deploy to christianwong.dev
+name: Deploy release
 
 on:
   release:
