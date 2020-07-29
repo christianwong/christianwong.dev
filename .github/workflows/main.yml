@@ -1,8 +1,8 @@
 name: Deploy to christianwong.dev
+
 on:
-  push:
-    branches:
-      - master
+  release:
+    types: [published]
 
 jobs:
   build:
@@ -24,6 +24,7 @@ jobs:
         with:
           name: build
           path: build
+
   deploy:
     name: Deploy
     needs: build
