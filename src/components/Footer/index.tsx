@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <FooterDark>
       Site version:&nbsp;
       <a
-        href="##GITHUB_SERVER_URL##/##GITHUB_REPOSITORY##/releases/tag/##RELEASE_TAG_NAME##"
+        href="https://github.com/christianwong/christianwong.dev/releases/tag/##RELEASE_TAG_NAME##"
         target="_blank"
         rel="noopener noreferrer"
       >

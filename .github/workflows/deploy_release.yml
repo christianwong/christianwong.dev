@@ -1,8 +1,8 @@
-name: Deploy release
+name: Deploy pre-release
 
 on:
   release:
-    types: [released]
+    types: [prereleased]
 
 jobs:
   build:
@@ -13,18 +13,6 @@ jobs:
         run : echo ${{ github.event.release.tag_name }}
       - name: Checkout Repo
         uses: actions/checkout@master
-      - name: Replace GITHUB_SERVER_URL
-        uses: shitiomatic/str-replace@master
-        with:
-          find: "##GITHUB_SERVER_URL##"
-          replace: $GITHUB_SERVER_URL
-          include: "src/"
-      - name: Replace GITHUB_REPOSITORY
-        uses: shitiomatic/str-replace@master
-        with:
-          find: "##GITHUB_REPOSITORY##"
-          replace: $GITHUB_REPOSITORY
-          include: "src/"
       - name: Replace RELEASE_TAG_NAME
         uses: shitiomatic/str-replace@master
         with:
