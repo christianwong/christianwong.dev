@@ -3,6 +3,6 @@
 
 # hello, world!
 
-This is after I moved to Firebase + Typescript + REACT.
+This is after I moved to Firebase + Typescript + REACT
 
 ![christianwong.dev screenshot](/screenshot.png)
