@@ -2,7 +2,7 @@ name: Deploy pre-release
 
 on:
   release:
-    types: [prereleased]
+    types: [released]
 
 jobs:
   build:
