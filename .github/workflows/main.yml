@@ -1,12 +1,12 @@
-name: Firebase Deploy
+name: Deploy to christianwong.dev
 on:
   push:
     branches:
       - master
 
 jobs:
-  build:
-    name: Build
+  test:
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -17,6 +17,14 @@ jobs:
         env:
           CI: true
         run: npm test
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Install Dependencies
+        run: npm install
       - name: Build
         run: npm run build
       - name: Archive Production Artifact
