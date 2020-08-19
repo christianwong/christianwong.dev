@@ -52,3 +52,25 @@ export const PlaceHolderDark = styled.div`
     color: #0ce5e1;
   }
 `;
+
+export const PlaceHolder = styled.div`
+  &:nth-of-type(odd) {
+    background-color: #45969b;
+    color: #f2eaec;
+
+    a {
+      color: #0ce5e1;
+    }
+  }
+
+  &:nth-of-type(even) {
+    background-color: #f2eaec;
+    color: #45969b;
+
+    a {
+      color: #50b6bb;
+    }
+  }
+
+  padding: 120px 40px;
+`;

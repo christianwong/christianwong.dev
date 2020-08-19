@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
+  h3 {
+    padding: 20px 0;
+  }
 
-  a {
-    padding: 10px 20px;
+  p {
+    padding: 20px 20%;
   }
 `;
