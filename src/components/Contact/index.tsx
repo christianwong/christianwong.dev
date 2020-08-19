@@ -1,11 +1,21 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
+import {
+  FaLinkedin,
+  FaGithub,
+  FaTwitter,
+  FaInstagram,
+  FaCommentDots,
+} from 'react-icons/fa';
 
 import { ExternalLink } from './styles';
 
 const Contact: React.FC = () => {
   return (
     <>
+      <ExternalLink href="https://christianwong.blog" rel="noopener noreferrer">
+        <FaCommentDots size={30} />
+      </ExternalLink>
+
       <ExternalLink
         href="https://www.linkedin.com/in/christian-wong/"
         target="_blank"
