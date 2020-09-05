@@ -25,6 +25,13 @@ jobs:
          replace: ${{ github.event.release.tag_name }}
          include: "src/"
 
+      - name: Replace GTM_ID
+        uses: shitiomatic/str-replace@master
+        with:
+          find: "##GTM_ID##"
+          replace: ${{ secrets.GTM_ID }}
+          include: "public/"
+
       - name: Install Dependencies
         run: yarn
 
@@ -64,8 +71,8 @@ jobs:
       - name: Set up Firebase project
         run: |
           mv build/firebase.json .
-          firebase use ${{ secrets.PROJECT_ID }} --token ${{ secrets.FIREBASE_TOKEN }}
-          firebase target:apply hosting webapp ${{ secrets.PROJECT_STAGING_ID }} --token ${{ secrets.FIREBASE_TOKEN }}
+          firebase use ${{ secrets.PROJECT_STAGING_ID }} --token ${{ secrets.FIREBASE_TOKEN }}
+          firebase target:apply hosting webapp ${{ secrets.HOSTING_STAGING_ID }} --token ${{ secrets.FIREBASE_TOKEN }}
 
       - name: Deploy to staging site
         run: firebase deploy --only hosting:webapp --non-interactive --token ${{ secrets.FIREBASE_TOKEN }} -m ${{ github.event.release.tag_name }}
