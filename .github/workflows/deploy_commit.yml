@@ -72,5 +72,5 @@ jobs:
           firebase use ${{ secrets.PROJECT_STAGING_ID }} --token ${{ secrets.FIREBASE_TOKEN }}
           firebase target:apply hosting webapp ${{ secrets.HOSTING_STAGING_ID }} --token ${{ secrets.FIREBASE_TOKEN }}
 
-      - name: Deploy to staging site
+      - name: Deploy commit to staging site
         run: firebase deploy --only hosting:webapp --non-interactive --token ${{ secrets.FIREBASE_TOKEN }} -m "Commit on Github"
