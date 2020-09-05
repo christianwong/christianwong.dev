@@ -23,11 +23,11 @@ jobs:
          replace: "unreleased"
          include: "src/"
 
-      - name: Replace GTM_ID
+      - name: Replace GTM_STAGING_ID
         uses: shitiomatic/str-replace@master
         with:
           find: "##GTM_ID##"
-          replace: ${{ secrets.GTM_ID }}
+          replace: ${{ secrets.GTM_STAGING_ID }}
           include: "public/"
 
       - name: Install Dependencies
