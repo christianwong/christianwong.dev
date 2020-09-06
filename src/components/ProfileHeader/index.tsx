@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ProfilePic, Name } from './styles';
 
-import photo from '../../assets/chris.png';
+import photo from '../../assets/chris.jpg';
 
 const ProfileHeader: React.FC = () => {
   return (
